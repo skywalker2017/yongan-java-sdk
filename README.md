@@ -2,7 +2,6 @@
 
 ## 安装环境
 + Java推荐：JDK 8 （JDK8 至 JDK 14 都支持）
-
 + IDE：IntelliJ IDE.
 
 ## 第一个Solidity智能合约应用
