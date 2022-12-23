@@ -37,7 +37,7 @@ public class HttpUtils {
             connection.setRequestProperty("charset", "utf-8");
 
             connection.setRequestProperty("Content-Type", "application/json");
-            connection.setRequestProperty("Authorization", auth);
+            connection.setRequestProperty("Authorization", String.format("%s %s", "Bearer", auth));
             connection.connect(); // 建立TCP连接,getOutputStream会隐含的进行connect,所以此处可以不要
 
             dataout = new DataOutputStream(connection.getOutputStream()); // 创建输入输出流,用于往连接里面输出携带的参数
